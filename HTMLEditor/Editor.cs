@@ -27,7 +27,8 @@ namespace HTMLEditor
             } while (Console.ReadKey().Key != ConsoleKey.Escape);
 
             Console.WriteLine("-------------");
-            Console.WriteLine("  Deseja salvar o arquivo?");
+            Console.Write(" ");
+            Console.WriteLine("Deseja salvar o arquivo? (s/n)");
             char saveOption = char.Parse(Console.ReadLine());
             Save(saveOption, file);
 
